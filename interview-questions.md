@@ -76,7 +76,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 >
 >    So to the best of my current knowledge, I understand that we can call on built in methods because they are static properties of the class they are defined in. This leads me to ask, then what are prototypes? Using prototypes to inherit features from objects to call on our array? So what is Array.prototype.map() doing? Prototypes allow you to add new properties to object constructors. So if we add a method to the Array constructor, all array objects will inherit this method and we can call on it because methods act upon the data within the scope of the object. Arrays are objects and taking a look at the MDN polyfill for Array.prototype.map after this long convoluted path makes just a little bit more sense.
 >
->    So long story short, what's the difference? check the polyfill ¯\_(ツ)_/¯
+>    So long story short, what's the difference? check the polyfill ``¯\_(ツ)_/¯``
 
 
  >- https://www.geeksforgeeks.org/javascript-array-prototype-constructor/#:~:text=The%20JavaScript%20array%20prototype%20constructor,Array.prototype.name%20%3D%20value"
