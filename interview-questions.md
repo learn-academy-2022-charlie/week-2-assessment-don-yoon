@@ -6,7 +6,7 @@ First, without external resources. Challenge yourself to answer from memory as i
 
 Then, research the question to expand on your answer. Even if you feel you have answered the question completely, there is always something more to learn. Write your researched answer in your OWN WORDS.
 
-<span style = color: "red">
+<span style = "color:red">
 - All research was done with the syllabus as well as the given links
 </span>
 1. What is the difference between a parameter and an argument?
@@ -32,7 +32,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   - The wording about what .map returns needs to be clarified. The .map method will perform the provided function on every element in the array and populate a new array with the RESULTS. It does not change the original array it was called on. The method should not be used if the returned array will not be used. The forEach() method is a better option in that case because it will only execute the provided function once for each element in the array.
   Also I wanted to talk about the third parameter, array. Passing the array lets the callback function access the original array. It gives more to work with than just the current value of the iteration.
   A parameter not mentioned previously is thisArg. The parameter is useful when we want to use a function elsewhere in the code but requires us to change "this" within the scope of the method call. A good example can be seen in the link provided.
-<span style= color: "red">
+<span style= "color:red">
   let newArray = oldArray.map(callbackFunction, thisArg)
 
   const oldArray = [1, 4, 9, 16];
@@ -197,10 +197,12 @@ As mentioned in the syllabus, React components can be placed in two categories, 
 ?https://www.codecademy.com/learn/react-component-state/modules/react-102-stateless-inherit-stateful-u/cheatsheet#:~:text=In%20React%2C%20a%20stateful%20component,of%20components%20can%20use%20props.?
 
 4. React lifecycle methods:
-There are 3 stages. Mounting, Updating, and unmounting. The mounting stage is when the instance of a component is created and introduced to the DOM. Two of the methods we are familiar with are the constructor() and the render(). The constructor initializes the instance and the render is what gives what the user sees. As the name suggests, the update cam be the result of changes to the props or state. 
+There are 3 stages. Mounting, Updating, and unmounting. The mounting stage is when the instance of a component is created and introduced to the DOM. Two of the methods we are familiar with are the constructor() and the render(). The constructor initializes the instance and the render is what gives what the user sees. As the name suggests, the update cam be the result of changes to the props or state. The last unmounting phase is when a component is being disengaged from the DOM.
 
 "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
 "https://reactjs.org/docs/react-component.html#render"
 
 5. DOM:
-DOM is the document object model. It is a hierarchical tree that represents what we see, the webpage. 
+DOM is the document object model. It is a hierarchical tree that represents what we see, the webpage. Within every DOM, the HTML tags are considered to be objects. The nested tags are considered the children of the enclosing object. We learned that this type of behavior comes from class inheritance. Every tag that we see is called a node. Each node within the tree is also considered an object.
+
+"https://javascript.info/dom-nodes"
