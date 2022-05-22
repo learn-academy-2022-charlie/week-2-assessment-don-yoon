@@ -74,12 +74,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 > I was curious as to why both .map() and .filter() were called methods. After learning in class that methods are essentially functions that are the properties of an object that are defined as functions, I wanted to see where they come from. There are massive classes with static properties that contain all of these methods. I couldn't understand what this did so I had to look further into what static meant and it took me a while to understand that static properties can be called upon with an object being instantiated, which took an even longer time to understand. Even after reading through documentation about what static is and what its good for, I feel that there I need actual real world examples of static properties being implemented to get a better understanding.
 >
->    So to the best of my current knowledge, I understand that we can call on built in methods because they are static properties of the class they are defined in. This leads me to ask, then what are prototypes? Using prototypes to inherit features from objects to call on our array? So what is Array.prototype.map() doing? Prototypes allow you to add new properties to object constructors. So if we add a method to the Array constructor, all array objects will inherit this method and we can call on it because methods act upon the data within the scope of the object. Arrays are objects and taking a look at the MDN polyfill for Array.prototype.map after this long convoluted path makes just a little bit more sense.
+>    So to the best of my current knowledge, I understand that we can call on built in methods because they are static properties of the class they are defined in. This leads me to ask, then what are prototypes? Using prototypes to inherit features from objects to call on our array? So what is Array.prototype.map() doing? Prototypes allow you to add new properties to object constructors. So if we add a method to the Array constructor, all array objects will inherit this method and we can call on it because methods act upon the data within the scope of the object. arrays are objects and taking a look at the MDN polyfill for Array.prototype.map after this long convoluted path makes just a little bit more sense. So now I finally begin to understand what OOP means. Everything is treated as an object and thus inherits the properties of its parent class when being initialized. THEREFORE, all these wonderful built in methods can be called on these objects. So what about primitive data types? An object wrapper is created that contains the value of the string and the method is called and then destroyed (string methods for example).
 >
 >    So long story short, what's the difference? check the polyfill ``¯\_(ツ)_/¯``
 
-
- >- https://www.geeksforgeeks.org/javascript-array-prototype-constructor/#:~:text=The%20JavaScript%20array%20prototype%20constructor,Array.prototype.name%20%3D%20value"
+>- https://javascript.info/primitives-methods
+>
+>- https://www.geeksforgeeks.org/javascript-array-prototype-constructor/#:~:text=The%20JavaScript%20array%20prototype%20constructor,Array.prototype.name%20%3D%20value"
 >
 >-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#see_also"
 >
